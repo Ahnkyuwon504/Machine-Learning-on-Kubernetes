@@ -9,9 +9,9 @@ metadata:
     openshift.io/host.generated: 'true'
     nginx.ingress.kubernetes.io/ssl-redirect: "false"  
 spec:
-  tls:
-    - hosts:
-      - $(JUPYTERHUB_HOST)
+  # tls:
+  #   - hosts:
+  #     - $(JUPYTERHUB_HOST)
 
   rules:
   - host: $(JUPYTERHUB_HOST)
